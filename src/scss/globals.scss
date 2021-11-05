@@ -1,0 +1,105 @@
+@use 'sass:math';
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin: 20px 0;
+}
+
+.container {
+	padding: 16px;
+	width: 98%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.center {
+	text-align: center;
+}
+
+.custom-underline {
+	position: relative;
+	&::after {
+		content: '';
+		height: 3px;
+		width: 50%;
+		position: absolute;
+		top: 45px;
+		left: 25%;
+		background-color: #000;
+	}
+}
+.rounded {
+	border-radius: 6px;
+}
+.img {
+	width: 100%;
+}
+.w-50 {
+	width: 50%;
+}
+.m-auto {
+	margin: auto !important;
+}
+
+.d-flex {
+	display: flex;
+	width: 100%;
+}
+.d-flex.justify-center {
+	justify-content: center;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+}
+@for $i from 1 through 12 {
+	.col-sm-#{$i} {
+		width: calc(100% / (12 / $i));
+	}
+	.col-md-#{$i} {
+		width: calc(100% / (12 / $i));
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: white;
+	}
+	.custom-underline::after {
+		background-color: #fff;
+	}
+}
+
+@media (max-width: 425px) {
+	.d-flex.column {
+		flex-direction: column;
+	}
+	[class*='col-sm-'] {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	[class*='col-md-'] {
+		width: 100%;
+	}
+}

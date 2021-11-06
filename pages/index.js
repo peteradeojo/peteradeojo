@@ -66,8 +66,8 @@ export default function Home({ skills, works, posts }) {
 }
 
 export const getStaticProps = async () => {
-	const res = await fetch(`${server}/api/skills`);
-	const skills = await res.json();
+	const skillRes = await fetch(`${server}/api/skills`);
+	const skills = await skillRes.json();
 
 	const workRes = await fetch(`${server}/api/works`);
 	const works = await workRes.json();

@@ -19,12 +19,12 @@ export default function handler(req, res) {
 		},
 		{
 			id: 3,
-			title: 'NGTailor (On Going)',
+			title: 'NGTailor (On Going Project)',
 			url: 'https://ngtailor.herokuapp.com/',
 			thumbnail: 'mc.png',
 			description:
 				'My startup idea for connecting Nigerian tailors to their customers to ensure more accountability, ease of access, and create a sort of ranking system so customers can select from the best.',
 		},
 	];
-	res.status(200).json(data);
+	res.status(200).json(JSON.stringify(data));
 }

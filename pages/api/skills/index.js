@@ -26,5 +26,5 @@ export default function handler(req, res) {
 			img: 'mysql.png',
 		},
 	];
-	res.status(200).json(data);
+	res.status(200).json(JSON.stringify(data));
 }

@@ -7,5 +7,5 @@ export default function handler(req, res) {
 			link: 'https://dev.to/peteradeojo/transitioning-from-mysql-to-mongodb-433f',
 		},
 	];
-	res.status(200).json(posts);
+	res.status(200).json(JSON.stringify(posts));
 }

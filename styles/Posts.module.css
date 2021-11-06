@@ -1,0 +1,20 @@
+.post {
+  margin-top: 30px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1em;
+}
+.post a {
+  color: lightblue;
+}
+.post a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .post {
+    width: 70%;
+  }
+}
+
+/*# sourceMappingURL=Posts.module.css.map */

@@ -4,9 +4,9 @@ import UnderlinedHead from '../components/UnderlinedHead';
 const about = () => {
 	return (
 		<>
-			<Meta title='About' />
+			<Meta title='About | Peter Ade-Ojo' />
 			<div className='container'>
-				<UnderlinedHead title='About' center />
+				<UnderlinedHead title='About Me' center />
 
 				<p className='container'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vitae

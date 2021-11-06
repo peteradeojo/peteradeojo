@@ -1,0 +1,10 @@
+.contacts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon img {
+  width: 40px;
+}
+
+/*# sourceMappingURL=Contacts.module.css.map */

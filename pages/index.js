@@ -1,23 +1,27 @@
-import Skills from '../components/Skills';
+import server from '../config/server';
+
 import UnderlinedHead from '../components/UnderlinedHead';
+import Skills from '../components/Skills';
+import Works from '../components/Works';
+import Posts from '../components/Posts';
+import Contacts from '../components/Contacts';
+
 import styles from '../styles/Home.module.css';
 
-export default function Home({ skills }) {
+export default function Home({ skills, works, posts }) {
 	return (
 		<>
 			<div className='container'>
-				<UnderlinedHead title='Hey, there!' />
 				<p>
-					Hi. Welcome to my profile page. Let me tell you why you should hire
-					me.
+					Hi. Welcome to my profile page. Allow me to give you a quick tour.
 				</p>
 			</div>
 			<section aria-label='my work'>
 				<div className={'container'}>
-					<UnderlinedHead title='My Work' />
+					<UnderlinedHead title='Brief' />
 					<p>
 						I consider myself proficient at developing web-based applications.
-						In my design process, responsiveness and easy-to-use are{' '}
+						In my design process, responsiveness and easy-of-use are{' '}
 						<u>
 							<b>key</b>
 						</u>
@@ -42,18 +46,34 @@ export default function Home({ skills }) {
 						</div>
 					</div>
 					<Skills skills={skills} />
+					<p className='center'>For example, this website is powered by Next.js</p>
+					<Works works={works} />
+					<Posts posts={posts} />
 				</div>
 			</section>
+
+			<div className='container'>
+				<Contacts />
+			</div>
 		</>
 	);
 }
 
 export const getStaticProps = async () => {
-	const res = await fetch('http://localhost:3000/api/skills');
+	const res = await fetch(`${server}/api/skills`);
 	const skills = await res.json();
+
+	const workRes = await fetch(`${server}/api/works`);
+	const works = await workRes.json();
+
+	const postsRes = await fetch(`${server}/api/posts`);
+	const posts = await postsRes.json();
+
 	return {
 		props: {
 			skills,
+			works,
+			posts,
 		},
 	};
 };

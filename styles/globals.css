@@ -60,6 +60,10 @@ p {
   margin: auto !important;
 }
 
+.mt-2 {
+  margin-top: 20px;
+}
+
 .d-flex {
   display: flex;
   width: 100%;

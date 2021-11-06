@@ -1,5 +1,6 @@
 import server from '../config/server';
 
+import Image from 'next/image';
 import UnderlinedHead from '../components/UnderlinedHead';
 import Skills from '../components/Skills';
 import Works from '../components/Works';
@@ -37,16 +38,21 @@ export default function Home({ skills, works, posts }) {
 							programming languages, concepts and technologies.
 						</p>
 						<div className='col-sm-6 center'>
-							<img
+							<Image
 								src='/undraw/undraw_programmer_re_owql.svg'
 								className={'img w-50'}
+								height={40}
+								width={100}
+								layout='responsive'
 								alt='programmer icon from undraw'
 								title='Programmer'
 							/>
 						</div>
 					</div>
 					<Skills skills={skills} />
-					<p className='center'>For example, this website is powered by Next.js</p>
+					<p className='center'>
+						For example, this website is powered by Next.js
+					</p>
 					<Works works={works} />
 					<Posts posts={posts} />
 				</div>

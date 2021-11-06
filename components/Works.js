@@ -11,7 +11,7 @@ const Works = ({ works }) => {
 				{works.map((work) => (
 					<div key={work.id} className={styles.work}>
 						<h3>
-							<a href={work.url} target='_blank' referrerPolicy='no-referrer'>
+							<a href={work.url} target='_blank' referrerPolicy='no-referrer' rel='noreferrer'>
 								{work.title}
 							</a>{' '}
 							<BiLinkExternal />

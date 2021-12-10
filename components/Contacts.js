@@ -15,6 +15,12 @@ const Contacts = () => {
 			icon: 'github.svg',
 			href: 'https://github.com/peteradeojo',
 		},
+		{
+			id: 3,
+			title: 'WhatsApp',
+			icon: '',
+			href: 'https://api.whatsapp.com/send?phone=2348103490675'
+		},
 	];
 
 	return (

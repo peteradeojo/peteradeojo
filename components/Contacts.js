@@ -18,7 +18,7 @@ const Contacts = () => {
 		{
 			id: 3,
 			title: 'WhatsApp',
-			icon: 'whatsapp.svg',
+			icon: 'icons8-whatsapp.svg',
 			href: 'https://api.whatsapp.com/send?phone=2348103490675'
 		},
 	];

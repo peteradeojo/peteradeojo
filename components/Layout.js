@@ -2,10 +2,20 @@ import Meta from './Meta';
 import Nav from './Nav';
 
 const Layout = ({ children }) => {
+	const links = [
+		{
+			title: 'Home',
+			href: '/',
+		},
+		{
+			title: 'EOY Review',
+			href: '/year-in-review',
+		},
+	];
 	return (
 		<div>
 			<Meta />
-      {/* <Nav /> */}
+			<Nav links={links} />
 			{children}
 		</div>
 	);

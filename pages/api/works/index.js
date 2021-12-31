@@ -19,11 +19,18 @@ export default function handler(req, res) {
 		},
 		{
 			id: 3,
-			title: 'NGTailor (On Going Project)',
-			url: 'https://ngtailor.herokuapp.com/',
+			title: 'NGTailor (Ongoing)',
+			url: 'https://github.com/peteradeojo/ngtailor',
 			thumbnail: 'mc.png',
 			description:
 				'My startup idea for connecting Nigerian tailors to their customers to ensure more accountability, ease of access, and create a sort of ranking system so customers can select from the best.',
+		},
+		{
+			id: 4,
+			title: 'KAIZEN (Ongoing)',
+			url: 'https://github.com/peteradeojo/kaizen',
+			description:
+				"A front-page for my friend's clothing store to make orders and deliveries easier.",
 		},
 	];
 	res.status(200).json(JSON.stringify(data));

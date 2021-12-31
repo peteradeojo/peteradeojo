@@ -1,0 +1,40 @@
+.review_display {
+  margin: auto;
+  width: 90%;
+  background-color: #fff;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #000;
+}
+.review_display .review {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  width: 50%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+  min-height: 50px;
+}
+.review_display .review svg {
+  display: inline;
+  width: 10%;
+}
+.review_display .review div {
+  width: 70%;
+}
+.review_display .good {
+  justify-self: start;
+}
+.review_display .good svg {
+  fill: #984edb;
+}
+.review_display .bad {
+  justify-self: end;
+}
+.review_display .bad svg {
+  fill: tomato;
+}
+
+/*# sourceMappingURL=Review.module.css.map */

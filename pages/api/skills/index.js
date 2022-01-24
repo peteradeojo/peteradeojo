@@ -25,6 +25,11 @@ export default function handler(req, res) {
 			title: 'MySQL',
 			img: 'mysql.png',
 		},
+		{
+			id: 6,
+			title: 'Laravel',
+			img: 'laravel.png'
+		}
 	];
 	res.status(200).json(JSON.stringify(data));
 }

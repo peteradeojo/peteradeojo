@@ -8,6 +8,10 @@ const Layout = ({ children }) => {
 			href: '/',
 		},
 		{
+			title: 'CV',
+			href: '/curriculumvitae'
+		},
+		{
 			title: 'EOY Review',
 			href: '/year-in-review',
 		},

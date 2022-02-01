@@ -1,13 +1,13 @@
-import server from '../config/server';
+import server from "../config/server";
 
-import Image from 'next/image';
-import UnderlinedHead from '../components/UnderlinedHead';
-import Skills from '../components/Skills';
-import Works from '../components/Works';
-import Posts from '../components/Posts';
-import Contacts from '../components/Contacts';
+import Image from "next/image";
+import UnderlinedHead from "../components/UnderlinedHead";
+import Skills from "../components/Skills";
+import Works from "../components/Works";
+import Posts from "../components/Posts";
+import Contacts from "../components/Contacts";
 
-import styles from '../styles/Home.module.css';
+import styles from "../styles/Home.module.css";
 
 export default function Home({ skills, works, posts }) {
 	return (
@@ -18,11 +18,11 @@ export default function Home({ skills, works, posts }) {
 				</p>
 			</div>
 			<section aria-label='my work'>
-				<div className={'container'}>
+				<div className={"container"}>
 					<UnderlinedHead title='Brief' />
 					<p>
 						I consider myself proficient at developing web-based applications.
-						In my design process, responsiveness and easy-of-use are{' '}
+						In my design process, responsiveness and easy-of-use are{" "}
 						<u>
 							<b>key</b>
 						</u>
@@ -31,8 +31,8 @@ export default function Home({ skills, works, posts }) {
 					</p>
 					<div className='row'>
 						<p
-							className={styles.intro + ' col-sm-6'}
-							style={{ cursor: 'pointer', textAlign: 'justify' }}
+							className={styles.intro + " col-sm-6"}
+							style={{ cursor: "pointer", textAlign: "justify" }}
 						>
 							Over the last few years, I have learned and applied some major
 							programming languages, concepts and technologies.
@@ -40,7 +40,7 @@ export default function Home({ skills, works, posts }) {
 						<div className='col-sm-6 center'>
 							<Image
 								src='/undraw/undraw_programmer_re_owql.svg'
-								className={'img w-50'}
+								className={"img w-50"}
 								height={40}
 								width={100}
 								layout='responsive'

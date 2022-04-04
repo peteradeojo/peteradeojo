@@ -1,21 +1,17 @@
-import styles from '../styles/CV.module.css';
-import {
-	FaTwitter,
-	FaGithub,
-	FaLinkedin,
-} from 'react-icons/fa';
-import Image from 'next/image';
+import styles from "../styles/CV.module.css";
+import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
 
-import UnderlinedHead from '../components/UnderlinedHead';
+import UnderlinedHead from "../components/UnderlinedHead";
 
 const Education = ({ details }) => {
 	return (
 		<div className={styles.education}>
 			<div className={styles.qualification}>{details.qualification}</div>
 			<div className={styles.institution}>
-				{details.institution + ', ' + details.address}
+				{details.institution + ", " + details.address}
 			</div>
-			<div className={styles.dates}>{details.from + ' - ' + details.to}</div>
+			<div className={styles.dates}>{details.from + " - " + details.to}</div>
 		</div>
 	);
 };
@@ -31,10 +27,10 @@ const Experience = ({ details }) => {
 				<>
 					<p
 						style={{
-							fontWeight: 'bold',
-							margin: '0px',
-							marginTop: '10px',
-							color: '#223',
+							fontWeight: "bold",
+							margin: "0px",
+							marginTop: "10px",
+							color: "#223",
 						}}
 					>
 						Achievements
@@ -55,7 +51,7 @@ const Certifications = ({ details }) => {
 		<div className={styles.certification}>
 			<div className={styles.certificate}>
 				<Image
-					src={'/img/' + details.cert}
+					src={"/img/" + details.cert}
 					width={50}
 					height={35}
 					alt=''
@@ -66,9 +62,9 @@ const Certifications = ({ details }) => {
 			<div className={styles.certificationDetails}>
 				<span className={styles.certificationLogo}>
 					<Image
-						src={'/img/' + details.logo}
-						width={'24px'}
-						height={'24px'}
+						src={"/img/" + details.logo}
+						width={"24px"}
+						height={"24px"}
 						alt=''
 					/>
 				</span>
@@ -81,20 +77,20 @@ const Certifications = ({ details }) => {
 const CurriculumVitae = () => {
 	const educationList = [
 		{
-			institution: 'University of Lagos',
-			address: 'Akoka, Yaba, Lagos, Nigeria',
-			qualification: 'Computer Engineering, B.Eng',
-			course: 'Computer Engineering',
-			from: '2018',
-			to: 'present',
+			institution: "University of Lagos",
+			address: "Akoka, Yaba, Lagos, Nigeria",
+			qualification: "Computer Engineering, B.Eng",
+			course: "Computer Engineering",
+			from: "2018",
+			to: "present",
 		},
 		{
 			id: 2,
-			institution: 'The International School, University of Ibadan',
-			address: 'Ibadan, Oyo State',
-			qualification: 'WASSCE',
-			from: '2012',
-			to: '2018',
+			institution: "The International School, University of Ibadan",
+			address: "Ibadan, Oyo State",
+			qualification: "WASSCE",
+			from: "2012",
+			to: "2018",
 		},
 	];
 
@@ -102,47 +98,53 @@ const CurriculumVitae = () => {
 		{
 			location:
 				"Maternal-Child Specialists' Clinics, Ado-Ekiti, Ekiti State, Nigeria",
-			role: 'ICT Administrator',
+			role: "ICT Administrator",
 			description:
-				'Responsible for troubleshooting a variety of technical issues for staff, assisting with server maintenance, and installing a wide range of equipment.',
+				"Responsible for troubleshooting a variety of technical issues for staff, assisting with server maintenance, and installing a wide range of equipment.",
 			achievements: [
-				'Deployed the first Electronic Point of Sales system in the hospital pharmacy.',
+				"Deployed the first Electronic Point of Sales system in the hospital pharmacy.",
 				"Responsible for the development, deployment and maintenance of the hospital's web site which provided contact information, directions and allowed patients to schedule visits with specialists.",
 			],
+		},
+		{
+			location: "Bincom Dev Center",
+			role: "Python Developer Trainee",
+			description:
+				"A 6 month internship with Bincom dev center as a Python Developer.",
 		},
 	];
 
 	const certifications = [
 		{
-			title: 'Python 3 Tutorial',
-			from: 'SoloLearn',
-			logo: 'sololearn-2.svg',
-			cert: 'sololearn-Python.jpg',
+			title: "Python 3 Tutorial",
+			from: "SoloLearn",
+			logo: "sololearn-2.svg",
+			cert: "sololearn-Python.jpg",
 		},
 		{
-			title: 'PHP Tutorial',
-			from: 'SoloLearn',
-			logo: 'sololearn-2.svg',
-			cert: 'sololearn-PHP.jpg',
+			title: "PHP Tutorial",
+			from: "SoloLearn",
+			logo: "sololearn-2.svg",
+			cert: "sololearn-PHP.jpg",
 		},
 		{
-			title: 'SQL Fundamentals',
-			from: 'SoloLearn',
-			logo: 'sololearn-2.svg',
-			cert: 'sololearn-SQL.jpg',
+			title: "SQL Fundamentals",
+			from: "SoloLearn",
+			logo: "sololearn-2.svg",
+			cert: "sololearn-SQL.jpg",
 		},
 		{
-			title: 'JavaScript',
-			from: 'SoloLearn',
-			logo: 'sololearn-2.svg',
-			cert: 'sololearn-JS.jpg',
+			title: "JavaScript",
+			from: "SoloLearn",
+			logo: "sololearn-2.svg",
+			cert: "sololearn-JS.jpg",
 		},
 	];
 
 	return (
 		<>
 			<div className='container'>
-				<UnderlinedHead title={'My CV'} center />
+				<UnderlinedHead title={"My CV"} center />
 			</div>
 			<div className='container'>
 				<div className={styles.pane}>
@@ -153,19 +155,19 @@ const CurriculumVitae = () => {
 					<ul className={styles.linklist}>
 						<li>
 							<FaGithub className={styles.icon} />
-							<span className={styles.label}>Github:</span>{' '}
+							<span className={styles.label}>Github:</span>{" "}
 							<a href='https://github.com/peteradeojo'>peteradeojo</a>
 						</li>
 						<li>
 							<FaLinkedin className={styles.icon} />
-							<span className={styles.label}>LinkedIn:</span>{' '}
+							<span className={styles.label}>LinkedIn:</span>{" "}
 							<a href='https://www.linkedin.com/in/peter-ade-ojo-0a52581aa'>
 								peteradeojo
 							</a>
 						</li>
 						<li>
 							<FaTwitter className={styles.icon} />
-							<span className={styles.label}>Twitter:</span>{' '}
+							<span className={styles.label}>Twitter:</span>{" "}
 							<a href='https://twitter.com/_peterstpatrick'>@_peterstpatrick</a>
 						</li>
 					</ul>
@@ -197,6 +199,10 @@ const CurriculumVitae = () => {
 							</div>
 						))}
 					</div>
+				</div>
+				<div className={styles.pane}>
+					<h2>Contributions</h2>
+					
 				</div>
 			</div>
 		</>

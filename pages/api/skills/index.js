@@ -29,7 +29,17 @@ export default function handler(req, res) {
 			id: 6,
 			title: 'Laravel',
 			img: 'laravel.png'
-		}
+		},
+		{
+			id: 7,
+			title: 'Python',
+			img: 'python-logo-master.png'
+		},
+		{
+			id: 8,
+			title: 'Django',
+			img: 'django-logo-negative.png'
+		},
 	];
 	res.status(200).json(JSON.stringify(data));
 }

@@ -6,8 +6,8 @@ const Skill = ({ skill }) => {
 		<div className='center mt-2'>
 			<Image
 				src={'/img/' + skill.img}
-				width={80}
-				height={80}
+				width={'100'}
+				height={'75'}
 				layout='fixed'
 				title={skill.title}
 				alt={skill.title}

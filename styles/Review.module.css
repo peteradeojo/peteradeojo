@@ -17,15 +17,27 @@
   border-bottom: 1px solid #ccc;
   min-height: 50px;
 }
-.review_display .review svg {
-  display: inline;
-  width: 10%;
-}
 .review_display .review div {
+  /* border: 1px solid red; */
   width: 70%;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 .review_display .good {
   justify-self: start;
+}
+.review_display span.identify {
+  padding: 10px;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.review_display .identify svg {
+  width: 100%;
 }
 .review_display .good svg {
   fill: #984edb;

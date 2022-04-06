@@ -15,10 +15,6 @@ const Layout = ({ children }) => {
 		title: 'Check Me Out',
 		href: '/portfolio'
 		}
-		// {
-		// 	title: 'EOY Review',
-		// 	href: '/year-in-review',
-		// },
 	];
 	return (
 		<div>

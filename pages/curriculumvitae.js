@@ -1,6 +1,7 @@
 import styles from "../styles/CV.module.css";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
+import { Whitepane } from "../components/UI";
 
 import UnderlinedHead from "../components/UnderlinedHead";
 
@@ -199,10 +200,6 @@ const CurriculumVitae = () => {
 							</div>
 						))}
 					</div>
-				</div>
-				<div className={styles.pane}>
-					<h2>Contributions</h2>
-					
 				</div>
 			</div>
 		</>

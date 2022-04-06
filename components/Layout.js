@@ -12,9 +12,13 @@ const Layout = ({ children }) => {
 			href: '/curriculumvitae'
 		},
 		{
-			title: 'EOY Review',
-			href: '/year-in-review',
-		},
+		title: 'Check Me Out',
+		href: '/portfolio'
+		}
+		// {
+		// 	title: 'EOY Review',
+		// 	href: '/year-in-review',
+		// },
 	];
 	return (
 		<div>

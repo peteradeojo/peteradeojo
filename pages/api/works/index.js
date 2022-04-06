@@ -3,34 +3,36 @@ export default function handler(req, res) {
 		{
 			id: 1,
 			title: "Maternal-Child Specialists' Clinics",
-			url: 'https://maternalchildhosp.com',
+			url: "https://maternalchildhosp.com",
 			description:
 				"I worked on a frontend application for a hospital, Maternal-Child Specialists' Clinics, that allowed them to create an online presence and also allowed customers to book appointments online. I was also responsible for the devOps which included hosting, server configurations and database management.",
-			thumbnail: 'mc.png',
-			page: 'maternal-child-specialists-clinics',
+			thumbnail: "mc.png",
+			page: "maternal-child-specialists-clinics",
 		},
 		{
 			id: 2,
-			title: 'ABWeather',
-			url: 'https://abweather-adeojo.firebaseapp.com/',
-			thumbnail: 'mc.png',
+			title: "ABWeather",
+			url: "https://abweather-adeojo.firebaseapp.com/",
+			thumbnail: "mc.png",
 			description:
-				'A simple JavaScript, progressive web application for fetching real-time weather information from the OpenWeatherMap API. A project for #GADS2020',
+				"A simple JavaScript, progressive web application for fetching real-time weather information from the OpenWeatherMap API. A project for #GADS2020",
+			github: "https://github.com/peteradeojo/abweather"
 		},
 		{
 			id: 3,
-			title: 'NGTailor (Ongoing)',
-			url: 'https://github.com/peteradeojo/ngtailor',
-			thumbnail: 'mc.png',
+			title: "KAIZEN (Ongoing)",
+			url: "https://github.com/peteradeojo/kaizen",
 			description:
-				'My startup idea for connecting Nigerian tailors to their customers to ensure more accountability, ease of access, and create a sort of ranking system so customers can select from the best.',
+				"A front-page for my friend's clothing store to make orders and deliveries easier.",
 		},
 		{
 			id: 4,
-			title: 'KAIZEN (Ongoing)',
-			url: 'https://github.com/peteradeojo/kaizen',
+			title: "To-do List",
+			url: "https://adeojo-bincom-test/",
 			description:
-				"A front-page for my friend's clothing store to make orders and deliveries easier.",
+				"A user authenticated todo list application built with Python and Django for my Bincom Python Developer Trainee Intermediate Test",
+			github:
+				"https://github.com/peteradeojo/bincom-beginner-test/tree/main/Q2",
 		},
 	];
 	res.status(200).json(JSON.stringify(data));

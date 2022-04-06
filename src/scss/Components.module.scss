@@ -1,0 +1,9 @@
+@use "UI" as ui;
+
+.whitepane {
+	@include ui.white-pane;
+}
+
+.whitepane.smallpane {
+  padding: 20px 10px;
+}

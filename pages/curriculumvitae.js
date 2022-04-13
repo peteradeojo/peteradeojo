@@ -140,6 +140,11 @@ const CurriculumVitae = () => {
 			logo: "sololearn-2.svg",
 			cert: "sololearn-JS.jpg",
 		},
+		{
+			title: "Python Developer Trainee",
+			from: "Bincom Dev Center",
+			cert: "binc.jpg",
+		},
 	];
 
 	return (

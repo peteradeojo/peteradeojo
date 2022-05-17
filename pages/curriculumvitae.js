@@ -162,7 +162,7 @@ const CurriculumVitae = () => {
 						<li>
 							<FaGithub className={styles.icon} />
 							<span className={styles.label}>Github:</span>{" "}
-							<a href='https://github.com/peteradeojo'>peteradeojo</a>
+							<a href='https://github.com/shouldbepete'>shouldbepete</a>
 						</li>
 						<li>
 							<FaLinkedin className={styles.icon} />

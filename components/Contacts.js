@@ -7,7 +7,7 @@ const Contacts = () => {
 			id: 1,
 			title: 'Twitter',
 			icon: 'twitter.svg',
-			href: 'https://twitter.com/_peterstpatrick',
+			href: 'https://twitter.com/shouldbepete',
 		},
 		{
 			id: 2,

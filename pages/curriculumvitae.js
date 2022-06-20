@@ -117,6 +117,17 @@ const CurriculumVitae = () => {
 
 	const certifications = [
 		{
+			title: "Mobile Web Specialist",
+			from: "Google Africa Developer Scholarship (with Andela)",
+			logo: "google.png",
+			cert: "gads-2021-cert.png",
+		},
+		{
+			title: "Python Developer Trainee",
+			from: "Bincom Dev Center",
+			cert: "binc.jpg",
+		},
+		{
 			title: "Python 3 Tutorial",
 			from: "SoloLearn",
 			logo: "sololearn-2.svg",
@@ -139,11 +150,6 @@ const CurriculumVitae = () => {
 			from: "SoloLearn",
 			logo: "sololearn-2.svg",
 			cert: "sololearn-JS.jpg",
-		},
-		{
-			title: "Python Developer Trainee",
-			from: "Bincom Dev Center",
-			cert: "binc.jpg",
 		},
 	];
 

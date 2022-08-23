@@ -21,7 +21,7 @@ export default function Home({ skills, works, posts }) {
 						<div className='row'>
 							<div className='col-sm-6'>
 								<p>
-									I'm a software engineer specializing in building backend
+									I am a software engineer specializing in building backend
 									solutions for businesses. Over the last few years, I have
 									experience in building reliable, distributed and
 									perfomance-centered solutions in industries such as Health &

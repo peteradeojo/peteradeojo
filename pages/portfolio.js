@@ -1,4 +1,5 @@
-import { Whitepane, UnderlinedHead } from "../components/UI";
+import Image from "next/image";
+import { UnderlinedHead, Whitepane } from "../components/UI";
 // import UnderlinedHead from "../components/UnderlinedHead";
 
 const items = [
@@ -15,7 +16,8 @@ const Item = ({ title, description, image, link }) => {
 		<Whitepane>
 			<div className='item'>
 				<div className='image'>
-					<img src={image} alt={title} />
+					{/* <img src={image} alt={title} /> */}
+					<Image src={image} alt={title} />
 				</div>
 				<div className='content'>
 					<div className='header'>

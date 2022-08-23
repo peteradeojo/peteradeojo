@@ -1,7 +1,7 @@
-import styles from "../styles/CV.module.css";
-import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Whitepane } from "../components/UI";
+import styles from "../styles/CV.module.css";
 
 import UnderlinedHead from "../components/UnderlinedHead";
 
@@ -112,6 +112,18 @@ const CurriculumVitae = () => {
 			role: "Python Developer Trainee",
 			description:
 				"A 6 month internship with Bincom dev center as a Python Developer.",
+		},
+		{
+			location: "Creditwolf Inc.",
+			role: "Backend Engineer (PHP/Laravel)",
+			description:
+				"Creditwolf Inc. is a financial technology based company that provides digital solutions for finance and banking in Nigeria",
+			achievements: [
+				"API and Software Documentation",
+				"Implementation of APIs to proovide financial services to customers",
+				"quality assurance and testing of new features",
+				"Managing a sandbox environment in DigitalOcean",
+			],
 		},
 	];
 

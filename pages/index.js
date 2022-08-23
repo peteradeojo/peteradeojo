@@ -1,13 +1,13 @@
 import server from "../config/server";
 
 import Image from "next/image";
-import UnderlinedHead from "../components/UnderlinedHead";
-import Skills from "../components/Skills";
-import Works from "../components/Works";
-import Posts from "../components/Posts";
 import Contacts from "../components/Contacts";
+import Posts from "../components/Posts";
+import Skills from "../components/Skills";
+import UnderlinedHead from "../components/UnderlinedHead";
+import Works from "../components/Works";
 
-import { Whitepane, UnderlinedHead as UH } from "../components/UI";
+import { UnderlinedHead as UH, Whitepane } from "../components/UI";
 
 import styles from "../styles/Home.module.css";
 
@@ -19,17 +19,14 @@ export default function Home({ skills, works, posts }) {
 					<Whitepane>
 						<UH title='Brief' />
 						<p>
-							I consider myself proficient at developing web-based applications.
-							In my design process, responsiveness and easy-of-use are{" "}
-							<u>
-								<b>key</b>
-							</u>
-							. That way you have a solution you can take anywhere with you, on
-							any device 😉
+							I'm a software engineer specializing in building backend solutions
+							for businesses. Over the last few years, I have experience in
+							building reliable, distributed and perfomance-centered solutions
+							in industries such as Health & Hospitality and Fintech.
 						</p>
 						<div className='row'>
 							<p
-								className={styles.intro + " col-sm-6"}
+								className={"col-sm-6"}
 								style={{ cursor: "pointer", textAlign: "justify" }}
 							>
 								Over the last few years, I have learned and applied some major
@@ -59,7 +56,7 @@ export default function Home({ skills, works, posts }) {
 						For example, this website is powered by Next.js and hosted on{" "}
 						<a
 							href='https://vercel.com'
-							style={{ textDecoration: "underline", color: 'blue' }}
+							style={{ textDecoration: "underline", color: "blue" }}
 						>
 							Vercel
 						</a>

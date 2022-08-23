@@ -18,20 +18,16 @@ export default function Home({ skills, works, posts }) {
 				<div className={"container"}>
 					<Whitepane>
 						<UH title='Brief' />
-						<p>
-							I'm a software engineer specializing in building backend solutions
-							for businesses. Over the last few years, I have experience in
-							building reliable, distributed and perfomance-centered solutions
-							in industries such as Health & Hospitality and Fintech.
-						</p>
 						<div className='row'>
-							<p
-								className={"col-sm-6"}
-								style={{ cursor: "pointer", textAlign: "justify" }}
-							>
-								Over the last few years, I have learned and applied some major
-								programming languages, concepts and technologies.
-							</p>
+							<div className='col-sm-6'>
+								<p>
+									I'm a software engineer specializing in building backend
+									solutions for businesses. Over the last few years, I have
+									experience in building reliable, distributed and
+									perfomance-centered solutions in industries such as Health &
+									Hospitality and Fintech.
+								</p>
+							</div>
 							<div className='col-sm-6 center'>
 								<Image
 									src='/undraw/undraw_programmer_re_owql.svg'

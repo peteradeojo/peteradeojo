@@ -26,7 +26,7 @@ const Experience = ({ details }) => {
 			<div className={styles.experienceDesc}>{details.description}</div>
 			{details.achievements ? (
 				<>
-					<p
+					{/* <p
 						style={{
 							fontWeight: "bold",
 							margin: "0px",
@@ -35,7 +35,7 @@ const Experience = ({ details }) => {
 						}}
 					>
 						Achievements
-					</p>
+					</p> */}
 					<ul className={styles.achievements}>
 						{details.achievements.map((ach, index) => (
 							<li key={index}>{ach}</li>
@@ -99,9 +99,9 @@ const CurriculumVitae = () => {
 		{
 			location:
 				"Maternal-Child Specialists' Clinics, Ado-Ekiti, Ekiti State, Nigeria",
-			role: "ICT Administrator",
+			role: "Software Developer",
 			description:
-				"Responsible for troubleshooting a variety of technical issues for staff, assisting with server maintenance, and installing a wide range of equipment.",
+				"Developed and deployed the hospital's first Health Information system and website landing page which provided directions to the facility and increased online engagement.",
 			achievements: [
 				"Deployed the first Electronic Point of Sales system in the hospital pharmacy.",
 				"Responsible for the development, deployment and maintenance of the hospital's web site which provided contact information, directions and allowed patients to schedule visits with specialists.",
@@ -114,16 +114,21 @@ const CurriculumVitae = () => {
 				"A 6 month internship with Bincom dev center as a Python Developer.",
 		},
 		{
-			location: "Creditwolf Inc.",
+			location: "Purscliq",
 			role: "Backend Engineer (PHP/Laravel)",
 			description:
-				"Creditwolf Inc. is a financial technology based company that provides digital solutions for finance and banking in Nigeria",
+				"Purscliq is a financial technology based company that provides digital solutions for finance and banking in Nigeria",
 			achievements: [
-				"API and Software Documentation",
-				"Implementation of APIs to proovide financial services to customers",
-				"quality assurance and testing of new features",
-				"Managing a sandbox environment in DigitalOcean",
+				"Performed troubleshooting, monitored and maintained several backend services in PHP/Laravel.  ",
+				"Documented the development process, architecture, and technical details of several components of the backend service",
+				"Debugged and extended existing codebase to ship new features",
+				"Reduced request latency by introducing data caching and improved response time by 2x",
+				"Optimized database queries for faster performance and better security",
+				"Communicated with other teams to ensure the successful shipping of the product to production",
+				"Provisioned, deployed and secured a Digital Ocean server for production environment",
+				"Scrum team member delivering quality features in a timely manner",
 			],
+
 		},
 	];
 
@@ -180,19 +185,19 @@ const CurriculumVitae = () => {
 						<li>
 							<FaGithub className={styles.icon} />
 							<span className={styles.label}>Github:</span>{" "}
-							<a href='https://github.com/shouldbepete'>shouldbepete</a>
+							<a href='https://github.com/peteradeojo'>peteradeojo</a>
 						</li>
 						<li>
 							<FaLinkedin className={styles.icon} />
 							<span className={styles.label}>LinkedIn:</span>{" "}
-							<a href='https://www.linkedin.com/in/peter-ade-ojo-0a52581aa'>
+							<a href='https://www.linkedin.com/in/peter-adeojo'>
 								peteradeojo
 							</a>
 						</li>
 						<li>
 							<FaTwitter className={styles.icon} />
 							<span className={styles.label}>Twitter:</span>{" "}
-							<a href='https://twitter.com/_peterstpatrick'>@_peterstpatrick</a>
+							<a href='https://twitter.com/boluwatifee__'>@boluwatifee__</a>
 						</li>
 					</ul>
 				</div>
@@ -216,9 +221,9 @@ const CurriculumVitae = () => {
 				</div> */}
 				<div className={styles.pane}>
 					<h2>Certifications</h2>
-					<div className='row'>
+					<div className={styles.certificationList + ' row'}>
 						{certifications.map((cert, index) => (
-							<div key={index} className='col-sm-6'>
+							<div key={index} className='col-sm-6 col-md-3'>
 								<Certifications details={cert} />
 							</div>
 						))}

@@ -11,10 +11,10 @@ const Layout = ({ children }) => {
 			title: 'CV',
 			href: '/curriculumvitae'
 		},
-		{
-		title: 'Check Me Out',
-		href: '/portfolio'
-		}
+		// {
+		// title: 'Check Me Out',
+		// href: '/portfolio'
+		// }
 	];
 	return (
 		<div>

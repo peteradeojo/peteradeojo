@@ -20,13 +20,6 @@ export default function handler(req, res) {
 		},
 		{
 			id: 3,
-			title: "KAIZEN (Ongoing)",
-			url: "https://github.com/peteradeojo/kaizen",
-			description:
-				"A front-page for my friend's clothing store to make orders and deliveries easier.",
-		},
-		{
-			id: 4,
 			title: "To-do List",
 			url: "https://adeojo-bincom-test/",
 			description:

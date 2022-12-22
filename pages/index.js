@@ -22,8 +22,7 @@ export default function Home({ skills, works, posts }) {
 							<div className='col-sm-6'>
 								<p>
 									I am a software engineer specializing in building backend
-									solutions for businesses. Over the last few years, I have
-									experience in building reliable, distributed and
+									solutions for businesses. Over the last few years, I have gained experience in building reliable, secure, distributed and
 									perfomance-centered solutions in industries such as Health &
 									Hospitality and Fintech.
 								</p>

@@ -9,7 +9,7 @@ import Works from "../components/Works";
 
 import { UnderlinedHead as UH, Whitepane } from "../components/UI";
 
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 
 export default function Home({ skills, works, posts }) {
 	return (
@@ -17,14 +17,11 @@ export default function Home({ skills, works, posts }) {
 			<section>
 				<div className={"container"}>
 					<Whitepane>
-						<UH title='Brief' />
+						<UH title='Boluwatife Ade-Ojo' />
 						<div className='row'>
 							<div className='col-sm-6'>
 								<p>
-									I am a software engineer specializing in building backend
-									solutions for businesses. Over the last few years, I have gained experience in building reliable, secure, distributed and
-									perfomance-centered solutions in industries such as Health &
-									Hospitality and Fintech.
+								Dynamic Software Engineer and JavaScript and PHP Expert, skilled at developing complex solutions. Offering 3+ years of hands-on experience in professional design and development of backend web applications using a range of technologies and programming languages. Seeking to leverage broad development experience and technical expertise in a challenging role as a Software Engineer.
 								</p>
 							</div>
 							<div className='col-sm-6 center'>
@@ -48,7 +45,7 @@ export default function Home({ skills, works, posts }) {
 				<Skills skills={skills} />
 				<Whitepane small>
 					<span style={{ textAlign: "center", display: "block" }}>
-						For example, this website is powered by Next.js and hosted on{" "}
+						This website is powered by Next.js and hosted on{" "}
 						<a
 							href='https://vercel.com'
 							style={{ textDecoration: "underline", color: "blue" }}

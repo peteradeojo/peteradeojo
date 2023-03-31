@@ -3,10 +3,11 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "npm run build:css && next build",
 		"start": "next start",
 		"lint": "next lint",
 		"start:css": "sass src/scss:styles/ -w",
+		"build:css": "sass src/scss:styles/ --style compressed",
 		"export": "next export"
 	},
 	"dependencies": {

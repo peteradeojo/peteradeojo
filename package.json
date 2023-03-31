@@ -3,7 +3,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "npm run build:css && next build",
+		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
 		"start:css": "sass src/scss:styles/ -w",
@@ -19,7 +19,7 @@
 	},
 	"devDependencies": {
 		"@types/node": "^16.11.6",
-		"@types/react": "^17.0.34",
+		"@types/react": "^18.0.31",
 		"eslint": "7.32.0",
 		"eslint-config-next": "12.0.2",
 		"sass": "^1.43.4",

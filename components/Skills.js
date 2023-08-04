@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Skills = ({ skills }) => {
 	return (
 		<div className='mt-2'>
-			<UnderlinedHead title='What Can I Do?' center />
+			<UnderlinedHead title='Skills & Technologies' center />
 			<ul className={skillStyles.skills + ' mt-2'}>
 				{skills.map((skill) => (
 					<li key={skill.id}>

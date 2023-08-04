@@ -2,16 +2,22 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: none;
+  /* width: 50%; */
+  margin: 30px auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: proximity;
 }
 .skills li {
   padding: 4px;
   color: #000;
-  width: 30%;
+  /* width: 20%; */
   margin-bottom: 20px;
+  margin: 0 20px;
 }
 
 .logo {

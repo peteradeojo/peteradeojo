@@ -6,7 +6,7 @@ import UnderlinedHead from "./UnderlinedHead";
 const Works = ({ works }) => {
 	return (
 		<div>
-			<UnderlinedHead title='What Have I Done?' center />
+			<UnderlinedHead title='Projects' center />
 			<div className={styles.works}>
 				{works.map((work) => (
 					<div key={work.id} className={styles.work}>

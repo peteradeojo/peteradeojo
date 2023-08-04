@@ -21,7 +21,7 @@ export default function Home({ skills, works, posts }) {
 						<div className='row'>
 							<div className='col-sm-6'>
 								<p>
-								Dynamic Software Engineer and JavaScript and PHP Expert, skilled at developing complex solutions. Offering 3+ years of hands-on experience in professional design and development of backend web applications using a range of technologies and programming languages. Seeking to leverage broad development experience and technical expertise in a challenging role as a Software Engineer.
+								Highly skilled and dynamic Software Engineer with 3+ years of expertise in web application design and development for the Fintech and Health & Hospitality industries. Proficient in JavaScript and PHP, adept at crafting complex solutions. Proven track record of providing innovative business solutions to multinational clients across African and Pan-African countries. Seeking a challenging role to leverage technical excellence and drive impactful results.
 								</p>
 							</div>
 							<div className='col-sm-6 center'>

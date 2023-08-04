@@ -4,11 +4,19 @@ export default function handler(req, res) {
 			id: 1,
 			title: 'NodeJs',
 			img: 'node.svg',
+			style: {
+				width: '100',
+				height: '50',
+			}
 		},
 		{
 			id: 2,
 			title: 'PHP',
 			img: 'php-logo.svg',
+			style: {
+				width: '100',
+				height: '50',
+			}
 		},
 		{
 			id: 3,
@@ -24,6 +32,10 @@ export default function handler(req, res) {
 			id: 5,
 			title: 'MySQL',
 			img: 'mysql.png',
+			style: {
+				width: '100',
+				height: '50',
+			}
 		},
 		{
 			id: 6,
@@ -33,13 +45,30 @@ export default function handler(req, res) {
 		{
 			id: 7,
 			title: 'Python',
-			img: 'python-logo-master.png'
+			img: 'python-logo-master.png',
+			style: {
+				width: '100',
+				height: '50',
+			}
 		},
 		{
 			id: 8,
 			title: 'Django',
-			img: 'django-logo-negative.png'
+			img: 'django-logo-negative.png',
+			style: {
+				width: '100',
+				height: '50',
+			}
 		},
+		{
+			id: 9,
+			title: 'Docker',
+			img: 'docker.png',
+			style: {
+				width: '100',
+				height: '70',
+			}
+		}
 	];
 	res.status(200).json(JSON.stringify(data));
 }

@@ -21,7 +21,8 @@ const Experience = ({ details }) => {
 	return (
 		<div className={styles.experience}>
 			<div className={styles.experienceLocation}>
-				<span>{details.role}</span>, {details.location}
+				{details.location}
+				<p>{details.role}</p>
 			</div>
 			<div className={styles.experienceDesc}>{details.description}</div>
 			{details.achievements ? (
@@ -100,24 +101,18 @@ const CurriculumVitae = () => {
 			location:
 				"Maternal-Child Specialists' Clinics, Ado-Ekiti, Ekiti State, Nigeria",
 			role: "Software Developer",
-			description:
-				"Developed and deployed the hospital's first Health Information system and website landing page which provided directions to the facility and increased online engagement.",
+			// description:
+			// 	"Developed and deployed the hospital's first Health Information system and website landing page which provided directions to the facility and increased online engagement.",
 			achievements: [
 				"Deployed the first Electronic Point of Sales system in the hospital pharmacy.",
 				"Responsible for the development, deployment and maintenance of the hospital's web site which provided contact information, directions and allowed patients to schedule visits with specialists.",
 			],
 		},
 		{
-			location: "Bincom Dev Center",
-			role: "Python Developer Trainee",
-			description:
-				"A 6 month internship with Bincom dev center as a Python Developer.",
-		},
-		{
-			location: "Purscliq",
-			role: "Backend Engineer (PHP/Laravel)",
-			description:
-				"Purscliq is a financial technology based company that provides digital solutions for finance and banking in Nigeria",
+			location: "VoltWolf Ltd., Lagos, Nigeria",
+			role: "Lead Backend Engineer",
+			// description:
+			// 	"Purscliq is a financial technology based company that provides digital solutions for finance and banking in Nigeria",
 			achievements: [
 				"Performed troubleshooting, monitored and maintained several backend services in PHP/Laravel.  ",
 				"Documented the development process, architecture, and technical details of several components of the backend service",
@@ -128,7 +123,17 @@ const CurriculumVitae = () => {
 				"Provisioned, deployed and secured a Digital Ocean server for production environment",
 				"Scrum team member delivering quality features in a timely manner",
 			],
-
+		},
+		{
+			location: "Baxi by MFS Africa",
+			role: "Software Engineer",
+			achievements: [
+				"Developed automated scripts to simplify common tasks and reduce manual effort",
+				"Investigated and identified the root cause of customer issues and provided detailed reports to stakeholders",
+				"Supported the development and testing of new software applications, ensuring a smooth transition to production",
+				"Identified and implemented performance enhancements that improved system stability and reduced downtime by ~66%",
+				"Created an automated system that monitored application performance and alerted the team of any potential issues",
+			],
 		},
 	];
 
@@ -190,9 +195,7 @@ const CurriculumVitae = () => {
 						<li>
 							<FaLinkedin className={styles.icon} />
 							<span className={styles.label}>LinkedIn:</span>{" "}
-							<a href='https://www.linkedin.com/in/peter-adeojo'>
-								peteradeojo
-							</a>
+							<a href='https://www.linkedin.com/in/peter-adeojo'>peteradeojo</a>
 						</li>
 						<li>
 							<FaTwitter className={styles.icon} />
@@ -221,9 +224,9 @@ const CurriculumVitae = () => {
 				</div> */}
 				<div className={styles.pane}>
 					<h2>Certifications</h2>
-					<div className={styles.certificationList + ' row'}>
+					<div className={styles.certificationList + " row"}>
 						{certifications.map((cert, index) => (
-							<div key={index} className='col-sm-6 col-md-3'>
+							<div key={index} className='col-sm-6 col-md-3 col-lg-4'>
 								<Certifications details={cert} />
 							</div>
 						))}

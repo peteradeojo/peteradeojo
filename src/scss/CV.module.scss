@@ -50,24 +50,32 @@
 .experience {
 	padding: 10px 12px;
 	.experienceLocation {
-		span {
+		p {
 			font-style: normal;
 			color: #223;
 			font-weight: bold;
 			text-decoration: underline;
+			font-size: larger;
+			display: block;
+			margin: 0;
 		}
-		font-size: larger;
+		font-size: smaller;
 		color: #333;
-		font-style: italic;
+		margin-bottom: 1em;
 	}
 	.experienceDesc {
 		padding: 5px 0;
 	}
 	.achievements {
-		list-style: none;
+		list-style-type: square;
 		li {
 			padding: 5px;
-			font-style: italic;
+			font-weight: 500;
+			// font-style: italic;
+			width: 50%;
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
 		}
 	}
 	&:not(:last-of-type) {

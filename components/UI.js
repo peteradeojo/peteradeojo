@@ -1,5 +1,5 @@
 import { PropTypes } from "prop-types";
-import componentStyles from "../styles/Components.module.css";
+import componentStyles from "../src/scss/Components.module.scss";
 
 const Whitepane = ({ children, small }) => {
 	return (

@@ -1,5 +1,5 @@
 import { BiLinkExternal } from "react-icons/bi";
-import styles from "../styles/Works.module.css";
+import styles from "../styles/Works.module.scss";
 import Link from "next/link";
 import UnderlinedHead from "./UnderlinedHead";
 

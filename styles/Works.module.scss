@@ -1,3 +1,5 @@
+@use "../src/scss/variables" as var;
+
 .works {
   margin: 30px auto;
   display: flex;
@@ -7,37 +9,37 @@
 }
 
 .work {
-    margin-right: 3%;
-    width: 30%;
-    background-color: white;
-    color: #000;
-    border-radius: 6px;
-    padding: 12px;
-    margin-bottom: 20px;
+  margin-right: 3%;
+  width: 30%;
+  background-color: white;
+  color: #000;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 20px;
 
-    h3 a {
-      color: inherit;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    a {
-      color: blue;
-    }
-
-    p {
-      overflow: hidden;
-      /* white-space: nowrap; */
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
-    }
+  h3 a {
+    color: inherit;
   }
 
-@media (max-width: 768px) {
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a {
+    color: blue;
+  }
+
+  p {
+    overflow: hidden;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media (max-width: var.$breakpointMd) {
   .works {
     justify-content: space-around;
   }
@@ -50,18 +52,16 @@
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: var.$breakpointSm) {
   .works {
     flex-direction: column;
     justify-content: flex-start;
+
+    .work {
+      width: 100%;
+      height: unset;
+      margin-right: 0;
+    }
   }
 
-  .work {
-    width: 100%;
-    height: fit-content;
-    max-height: 300px;
-    overflow-y: auto;
-    overflow-y: unset;
-    margin-right: 0;
-  }
 }

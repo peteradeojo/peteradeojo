@@ -1,3 +1,5 @@
+@use "../src/scss/variables" as var;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -108,7 +110,7 @@ p {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: var.$breakpointSm) {
   .d-flex.column {
     flex-direction: column;
   }
@@ -118,7 +120,7 @@ p {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: var.$breakpointMd) {
   [class*='col-md-'] {
     width: 100%;
   }

@@ -1,6 +1,5 @@
 import { BiLinkExternal } from "react-icons/bi";
 import styles from "../styles/Works.module.scss";
-import Link from "next/link";
 import UnderlinedHead from "./UnderlinedHead";
 
 const Works = ({ works }) => {
@@ -21,8 +20,6 @@ const Works = ({ works }) => {
 							</a>
 						</h3>
 						<p>{work.description}</p>
-						{/* <a href=''></a> */}
-						{/* <Link href={'/show/' + work.page}>View User Story</Link> */}
 						{work.github ? (
 							<a
 								href={work.github}

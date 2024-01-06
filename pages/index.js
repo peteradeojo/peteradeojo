@@ -1,15 +1,14 @@
 import server from "../config/server";
 
 import Image from "next/image";
+import { Button } from "@mui/material";
+
 import Contacts from "../components/Contacts";
 import Posts from "../components/Posts";
 import Skills from "../components/Skills";
-import UnderlinedHead from "../components/UnderlinedHead";
 import Works from "../components/Works";
 
 import { UnderlinedHead as UH, Whitepane } from "../components/UI";
-
-// import styles from "../styles/Home.module.css";
 
 export default function Home({ skills, works, posts }) {
 	return (
@@ -21,7 +20,21 @@ export default function Home({ skills, works, posts }) {
 						<div className='row start'>
 							<div className='col-sm-6'>
 								<p>
-								Highly skilled and dynamic Software Engineer with 3+ years of expertise in web application design and development for the Fintech and Health & Hospitality industries. Proficient in JavaScript and PHP, adept at crafting complex solutions. Proven track record of providing innovative business solutions to multinational clients across African and Pan-African countries. Seeking a challenging role to leverage technical excellence and drive impactful results.
+									Highly skilled and dynamic Software Engineer with 3+ years of
+									expertise in web application design and development for the
+									Fintech and Health & Hospitality industries. Proficient in
+									JavaScript and PHP, adept at crafting complex solutions.
+									Proven track record of providing innovative business solutions
+									to multinational clients across African and Pan-African
+									countries. Seeking a challenging role to leverage technical
+									excellence and drive impactful results.
+									<br />
+									<br />
+									<a href="/Peter Ade-Ojo Resume.pdf" download={'Boluwatife.pdf'}>
+										<Button style={{ background: "#fff", fontStyle: "normal", textTransform: "revert" }}>
+											Download My Resume
+										</Button>
+									</a>
 								</p>
 							</div>
 							<div className='col-sm-6 center'>
@@ -30,9 +43,9 @@ export default function Home({ skills, works, posts }) {
 									className={"img w-50 rounded"}
 									height={500}
 									width={370}
-									layout="intrinsic"
+									layout='intrinsic'
 									alt='programmer icon from undraw'
-									title='Programmer'
+									title='Boluwatife'
 								/>
 							</div>
 						</div>

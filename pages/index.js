@@ -18,7 +18,7 @@ export default function Home({ skills, works, posts }) {
 				<div className={"container"}>
 					<Whitepane>
 						<UH title='Boluwatife Ade-Ojo' />
-						<div className='row'>
+						<div className='row start'>
 							<div className='col-sm-6'>
 								<p>
 								Highly skilled and dynamic Software Engineer with 3+ years of expertise in web application design and development for the Fintech and Health & Hospitality industries. Proficient in JavaScript and PHP, adept at crafting complex solutions. Proven track record of providing innovative business solutions to multinational clients across African and Pan-African countries. Seeking a challenging role to leverage technical excellence and drive impactful results.
@@ -26,11 +26,11 @@ export default function Home({ skills, works, posts }) {
 							</div>
 							<div className='col-sm-6 center'>
 								<Image
-									src='/undraw/undraw_programmer_re_owql.svg'
-									className={"img w-50"}
-									height={40}
-									width={100}
-									layout='responsive'
+									src='/img/profile.jpg'
+									className={"img w-50 rounded"}
+									height={500}
+									width={370}
+									layout="intrinsic"
 									alt='programmer icon from undraw'
 									title='Programmer'
 								/>

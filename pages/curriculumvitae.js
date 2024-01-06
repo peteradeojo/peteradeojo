@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Whitepane } from "../components/UI";
-import styles from "../styles/CV.module.css";
+import styles from "../src/scss/CV.module.scss";
 
 import UnderlinedHead from "../components/UnderlinedHead";
 

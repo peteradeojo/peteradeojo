@@ -1,6 +1,13 @@
 export default function handler(req, res) {
 	const data = [
 		{
+			id: 6,
+			title: "Typegen (Typescript Types Generator)",
+			url: "https://typegen.vercel.app",
+			description: "Generates Typescript type definitions from JSON schema",
+			github: "https://githuh.com/peteradeojo/typegen"
+		},
+		{
 			id: 0,
 			title: "Laas (Logging-as-a-Service)",
 			url: "https://lags.vercel.app",

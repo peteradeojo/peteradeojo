@@ -1,0 +1,34 @@
+@use '../src/scss/variables' as var;
+
+.skills {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: none;
+  /* width: 50%; */
+  margin: 30px auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: proximity;
+
+  li {
+    padding: 4px;
+    color: #000;
+    margin-bottom: 20px;
+    margin: 0 20px;
+    min-width: 5%;
+    @media (max-width: var.$breakpointMd) {
+      min-width: 10%;
+    }
+    @media (max-width: var.$breakpointSm) {
+      min-width: 20%;
+    }
+  }
+
+}
+.logo {
+  width: 80px;
+}

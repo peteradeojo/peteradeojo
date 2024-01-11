@@ -1,4 +1,4 @@
-import skillStyles from '../styles/Skills.module.css';
+import skillStyles from '../styles/Skills.module.scss';
 import UnderlinedHead from './UnderlinedHead';
 import Skill from './Skill';
 import Image from 'next/image';

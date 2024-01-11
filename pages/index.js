@@ -53,8 +53,6 @@ export default function Home({ skills, works, posts }) {
 				</div>
 			</section>
 
-			<div className='container'>
-				{/* <Whitepane> */}
 				<Skills skills={skills} />
 				<Whitepane small>
 					<span style={{ textAlign: "center", display: "block" }}>
@@ -67,8 +65,6 @@ export default function Home({ skills, works, posts }) {
 						</a>
 					</span>
 				</Whitepane>
-				{/* </Whitepane> */}
-			</div>
 
 			<div className='container'>
 				<Works works={works} />

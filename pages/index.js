@@ -30,9 +30,9 @@ export default function Home({ skills, works, posts }) {
 									excellence and drive impactful results.
 									<br />
 									<br />
-									<a href="/Peter Ade-Ojo Resume.pdf" download={'Boluwatife.pdf'}>
-										<Button style={{ background: "#fff", fontStyle: "normal", textTransform: "revert" }}>
-											Download My Resume
+									<a href="https://read.cv/peteru" target="_blank">
+										<Button style={{ background: "#000", fontStyle: "normal", textTransform: "revert", color: "#fff" }}>
+											Looking for a CV?
 										</Button>
 									</a>
 								</p>

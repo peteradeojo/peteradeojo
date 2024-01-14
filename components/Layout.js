@@ -7,10 +7,10 @@ const Layout = ({ children }) => {
 			title: 'Home',
 			href: '/',
 		},
-		{
-			title: 'CV',
-			href: '/curriculumvitae'
-		},
+		// {
+		// 	title: 'CV',
+		// 	href: '/curriculumvitae'
+		// },
 		// {
 		// title: 'Check Me Out',
 		// href: '/portfolio'
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 	return (
 		<div>
 			<Meta />
-			<Nav links={links} />
+			{/* <Nav links={links} /> */}
 			{children}
 		</div>
 	);

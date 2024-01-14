@@ -30,7 +30,7 @@ export default function Home({ skills, works, posts }) {
 									excellence and drive impactful results.
 									<br />
 									<br />
-									<a href="https://read.cv/peteru" target="_blank">
+									<a href="https://read.cv/peteru" target="_blank" rel="noreferrer">
 										<Button style={{ background: "#000", fontStyle: "normal", textTransform: "revert", color: "#fff" }}>
 											Looking for a CV?
 										</Button>

@@ -1,7 +1,7 @@
 ### Hi there 👋🏾
 
 - 👨🏾‍💻 I’m a Software Engineer with a focus on the backend
-- 💬 Ask me about PHP and TypeScript
+- 💬 Ask me about PHP, JavaScript & Go, 
 
 ### Reach Me
 [![Twitter](https://img.shields.io/badge/-Twitter-white?logo=twitter)](https://twitter.com/boluwatifee__)
@@ -14,3 +14,7 @@
 ![PHP](https://img.shields.io/badge/-PHP-blue?logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/-Laravel-white?logo=laravel)
 ![Node](https://img.shields.io/badge/-Node-darkgreen?logo=node.js&logoColor=white)
+
+### Interested In
+![Ruby on Rails](https://img.shields.io/badge/-Ruby%20On%20Rails-FFFFFF?logo=rubyonrails&logoColor=red)
+![Go](https://img.shields.io/badge/-Go-fff?logo=go)

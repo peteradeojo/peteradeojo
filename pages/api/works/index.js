@@ -1,39 +1,40 @@
 export default function handler(req, res) {
 	const data = [
 		{
-			id: 6,
+			id: 3,
 			title: "Typegen (Typescript Types Generator)",
 			url: "https://typegen.vercel.app",
 			description: "Generates Typescript type definitions from JSON schema",
-			github: "https://githuh.com/peteradeojo/typegen"
-		},
-		{
-			id: 0,
-			title: "Laas (Logging-as-a-Service)",
-			url: "https://lags.vercel.app",
-			description: "Efficiently collating and analyzing logs is essential for developers as it provides valuable insights into the behavior and performance of their applications. Logs serve as a real-time record of events, errors, and warnings occurring within the application, allowing developers to proactively monitor, troubleshoot, and optimize their code. LAAS (Logging as a Service) is a powerful tool designed to simplify the process of logging and log analysis for developers.",
-			github: "https://github.com/peteradeojo/laas-api-nest",
+			github: "https://githuh.com/peteradeojo/typegen",
+			thumbnail: '/img/typegen.png'
 		},
 		{
 			id: 1,
+			title: "Doppler",
+			thumbnail: "https://usedoppler.app/image.png",
+			url: "https://usedoppler.app",
+			description: "Doppler is an all-in-one platform that provides end-to-end visibility into your software stack, from infrastructure to application-level monitoring. Our intuitive interface and AI-powered analytics make it easy to identify errors, prevent crashes, and catch issues before they escalate.",
+		},
+		{
+			id: 4,
 			title: "Maternal-Child Specialists' Clinics",
 			url: "https://maternalchildhosp.net",
 			description:
 				"Frontend application for a hospital, Maternal-Child Specialists' Clinics, that allowed them to create an online presence and also allowed customers to book appointments online.",
-			thumbnail: "mc.png",
+			// thumbnail: "mc.png",
 			page: "maternal-child-specialists-clinics",
 		},
 		{
-			id: 2,
+			id: 7,
 			title: "ABWeather",
 			url: "https://abweather-adeojo.firebaseapp.com/",
-			thumbnail: "mc.png",
+			// thumbnail: "mc.png",
 			description:
 				"A simple JavaScript, progressive web application for fetching real-time weather information from the OpenWeatherMap API. A project for #GADS2020",
 			github: "https://github.com/peteradeojo/abweather",
 		},
 		{
-			id: 3,
+			id: 6,
 			title: "To-do List",
 			description:
 				"A user authenticated todo list application built with Python and Django for my Bincom Python Developer Trainee Intermediate Test",

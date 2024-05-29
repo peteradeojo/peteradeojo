@@ -22,8 +22,7 @@ export default function Home({ skills, works, posts }) {
 								<p>
 									Highly skilled and dynamic Software Engineer with 3+ years of
 									expertise in web application design and development for the
-									Fintech and Health & Hospitality industries. Proficient in
-									JavaScript and PHP, adept at crafting complex solutions.
+									Fintech and Health & Hospitality industries.
 									Proven track record of providing innovative business solutions
 									to multinational clients across African and Pan-African
 									countries. Seeking a challenging role to leverage technical

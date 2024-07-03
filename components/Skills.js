@@ -1,15 +1,16 @@
-import skillStyles from '../styles/Skills.module.scss';
-import UnderlinedHead from './UnderlinedHead';
-import Skill from './Skill';
-import Image from 'next/image';
+import Skill from "./Skill";
 
 const Skills = ({ skills }) => {
 	return (
-		<div className='mt-2'>
-			<UnderlinedHead title='What I Do' center />
-			<ul className={skillStyles.skills + ' mt-2'}>
+		<div className="py-[100px]">
+			<p className='text-3xl text-center'>Skills</p>
+			<ul
+				className={
+					"flex flex-wrap justify-center gap-y-4 items-center"
+				}
+			>
 				{skills.map((skill) => (
-					<li key={skill.id}>
+					<li className='w-1/5 text-center' key={skill.id}>
 						<Skill skill={skill} />
 					</li>
 				))}

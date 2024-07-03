@@ -18,7 +18,7 @@ const Whitepane = ({ children, small }) => {
 };
 
 const UnderlinedHead = ({ title, center, underlined }) => {
-	return <h1 style={{ textAlign: center ? "center" : "auto" }}>{title}</h1>;
+	return <h1 className="text-3xl md:text-4xl font-bold" style={{ textAlign: center ? "center" : "auto" }}>{title}</h1>;
 };
 
 UnderlinedHead.propTypes = {

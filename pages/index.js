@@ -1,7 +1,6 @@
 import server from "../config/server";
 
 import Image from "next/image";
-import { Button } from "@mui/material";
 
 import Contacts from "../components/Contacts";
 import Posts from "../components/Posts";
@@ -13,64 +12,59 @@ import { UnderlinedHead as UH, Whitepane } from "../components/UI";
 export default function Home({ skills, works, posts }) {
 	return (
 		<>
-			<section>
-				<div className={"container"}>
-					<Whitepane>
-						<UH title='Boluwatife Ade-Ojo' />
-						<div className='row start'>
-							<div className='col-sm-6'>
-								<p>
-									Highly skilled and dynamic Software Engineer with 3+ years of
-									expertise in web application design and development for the
-									Fintech and Health & Hospitality industries.
-									Proven track record of providing innovative business solutions
-									to multinational clients across African and Pan-African
-									countries. Seeking a challenging role to leverage technical
-									excellence and drive impactful results.
-									<br />
-									<br />
-									<a href="https://read.cv/peteru" target="_blank" rel="noreferrer">
-										<Button style={{ background: "#000", fontStyle: "normal", textTransform: "revert", color: "#fff" }}>
-											Looking for a CV?
-										</Button>
-									</a>
-								</p>
-							</div>
-							<div className='col-sm-6 center'>
-								<Image
-									src='/img/profile.jpg'
-									className={"img w-50 rounded"}
-									height={500}
-									width={370}
-									layout='intrinsic'
-									alt='programmer icon from undraw'
-									title='Boluwatife'
-								/>
-							</div>
+			<section className='pt-24 px-12'>
+				<Whitepane>
+					<div className='flex'>
+						<div className='w-1/2'>
+							<UH title='Boluwatife Ade-Ojo' />
+							<div className='py-2'></div>
+							<p>
+								Highly skilled and dynamic Software Engineer with 3+ years of
+								expertise in web application design and development for the
+								Fintech and Health & Hospitality industries. Proven track record
+								of providing innovative business solutions to multinational
+								clients across African and Pan-African countries. Seeking a
+								challenging role to leverage technical excellence and drive
+								impactful results.
+							</p>
+							<div className='py-2'></div>
+							<a
+								href='https://read.cv/peteru'
+								target='_blank'
+								rel='noreferrer'
+								className='bg-black btn btn-glass border-0 hover:bg-gray-500 text-white btn-sm rounded-sm'
+							>
+								Looking for a Resume?
+							</a>
 						</div>
-					</Whitepane>
-				</div>
+						<div className='w-1/2 text-center'>
+							<Image
+								src='/img/profile.jpg'
+								className={"img w-50 rounded"}
+								height={500}
+								width={370}
+								layout='intrinsic'
+								alt='programmer icon from undraw'
+								title='Boluwatife'
+							/>
+						</div>
+					</div>
+				</Whitepane>
 			</section>
 
+			<div className='px-12'>
 				<Skills skills={skills} />
-				<Whitepane small>
-					<span style={{ textAlign: "center", display: "block" }}>
-						This website is powered by Next.js and hosted on{" "}
-						<a
-							href='https://vercel.com'
-							style={{ textDecoration: "underline", color: "blue" }}
-						>
-							Vercel
-						</a>
-					</span>
-				</Whitepane>
+			</div>
 
-			<div className='container'>
+			<div className='py-4'></div>
+
+			<div className='px-12'>
 				<Works works={works} />
+				<div className="pt-[50px]"></div>
 				<Posts posts={posts} />
 			</div>
 
-			<div className='container'>
+			<div className='px-12 py-24'>
 				<Contacts />
 			</div>
 		</>

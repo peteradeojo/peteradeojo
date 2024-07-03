@@ -1,10 +1,14 @@
-import { PropTypes } from 'prop-types';
+import { PropTypes } from "prop-types";
 
 const UnderlinedHead = ({ title, center }) => {
 	return (
-		<div className={`d-flex ${center ? 'justify-center' : ''}`}>
-			<h1 className={'custom-underline'}>{title}</h1>
-		</div>
+		<h1
+			className={`custom-underline font-bold text-3xl ${
+				center && "text-center"
+			}`}
+		>
+			{title}
+		</h1>
 	);
 };
 

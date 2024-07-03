@@ -1,38 +1,41 @@
 import { BiLinkExternal } from "react-icons/bi";
-import styles from "../styles/Works.module.scss";
-import UnderlinedHead from "./UnderlinedHead";
 
 const Works = ({ works }) => {
 	return (
-		<div>
-			<UnderlinedHead title='Projects' center />
-			<div className={styles.works}>
+		<div className='py-[50px]'>
+			<h1 className='text-center text-3xl'>Projects</h1>
+			<div className='py-4'></div>
+			<div className={"md:flex flex-wrap justify-between gap-y-8"}>
 				{works
 					.sort((a, b) => a.id - b.id)
 					.map((work) => (
-						<div key={work.id} className={styles.work}>
-							{work.thumbnail ? (
-								<div
-									style={{
-										height: "400px",
-										overflow: "hidden",
-										marginBottom: "1em",
-									}}
-								>
-									<img src={work.thumbnail} alt='' />
+						<a
+							key={work.id}
+							className={
+								"transition duration-200 hover:glass p-2 rounded w-[30%] block"
+							}
+							href={work.url || "#"}
+							target='_blank'
+						>
+							<div className='overflow-hidden'>
+								<div className='max-h-[220px] relative hover:scale-125 duration-200'>
+									{work.thumbnail ? (
+										<img src={work.thumbnail} alt='' className='w-full' />
+									) : (
+										<div className='h-[220px] glass'></div>
+									)}
 								</div>
-							) : null}
-
-							<h3>
-								<a
-									href={work.url}
-									target='_blank'
-									referrerPolicy='no-referrer'
-									rel='noreferrer'
-								>
-									{work.title} <BiLinkExternal />
-								</a>
-							</h3>
+							</div>
+							<div className='py-1'></div>
+							<a
+								href={work.url}
+								target='_blank'
+								referrerPolicy='no-referrer'
+								rel='noreferrer'
+								className='flex items-center gap-2 text-2xl font-bold pb-2'
+							>
+								{work.title} <BiLinkExternal />
+							</a>
 							<p>{work.description}</p>
 							{work.github ? (
 								<a
@@ -45,7 +48,7 @@ const Works = ({ works }) => {
 									View Project on Github <BiLinkExternal />
 								</a>
 							) : null}
-						</div>
+						</a>
 					))}
 			</div>
 		</div>

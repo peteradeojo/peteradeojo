@@ -43,24 +43,6 @@ export default function handler(req, res) {
 			img: 'laravel.png'
 		},
 		{
-			id: 7,
-			title: 'Python',
-			img: 'python-logo-master.png',
-			style: {
-				width: '100',
-				height: '50',
-			}
-		},
-		{
-			id: 8,
-			title: 'Django',
-			img: 'django-logo-negative.png',
-			style: {
-				width: '100',
-				height: '50',
-			}
-		},
-		{
 			id: 9,
 			title: 'Docker',
 			img: 'docker.png',

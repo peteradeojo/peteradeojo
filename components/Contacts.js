@@ -1,4 +1,3 @@
-import contactStyle from "../styles/Contacts.module.css";
 import Contact from "./Contact";
 
 const Contacts = () => {
@@ -24,7 +23,7 @@ const Contacts = () => {
 	];
 
 	return (
-		<div className={contactStyle.contacts}>
+		<div className={"flex justify-between items-center md:w-1/3 m-auto"}>
 			{contacts.map((contact) => (
 				<Contact
 					key={contact.id}

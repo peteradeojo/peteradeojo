@@ -3,7 +3,7 @@ import skillStyles from '../styles/Skills.module.scss';
 
 const Skill = ({ skill }) => {
 	return (
-		<div className='center mt-2'>
+		<div className='w-full'>
 			<Image
 				src={'/img/' + skill.img}
 				width={skill.style?.width || '100'}

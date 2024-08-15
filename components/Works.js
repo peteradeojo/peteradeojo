@@ -16,6 +16,7 @@ const Works = ({ works }) => {
 							}
 							href={work.url || "#"}
 							target='_blank'
+							rel="noopener"
 						>
 							<div className='overflow-hidden'>
 								<div className='max-h-[220px] relative hover:scale-125 duration-200'>

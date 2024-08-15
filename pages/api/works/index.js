@@ -1,29 +1,37 @@
 export default function handler(req, res) {
 	const data = [
 		{
-			id: 2,
+			id: 101,
+			title: 'SHOP2S',
+			url: 'https://shop2s.vercel.app',
+			description: "Lorem ipsum dolor sit amet.",
+			github: 'https://github.com/peteradeojo/trust-the-cycle-shop',
+			thumbnail: '',
+		},
+		{
+			id: 200,
 			title: "Typegen (Typescript Types Generator)",
 			url: "https://typegen.vercel.app",
 			description: "Generates Typescript type definitions from JSON schema",
-			github: "https://githuh.com/peteradeojo/typegen",
+			github: "https://github.com/peteradeojo/typegen",
 			thumbnail: '/img/typegen.png'
 		},
 		{
-			id: 1,
+			id: 100,
 			title: "Doppler",
 			thumbnail: "https://usedoppler.app/image.png",
 			url: "https://usedoppler.app",
 			description: "Doppler is an all-in-one platform that provides end-to-end visibility into your software stack, from infrastructure to application-level monitoring. Our intuitive interface and AI-powered analytics make it easy to identify errors, prevent crashes, and catch issues before they escalate.",
 		},
 		{
-			id: 3,
+			id: 300,
 			title: "Filesheer",
 			url: "https://filesheer.onrender.com",
 			description: "Filesheer is a web application that uses web sockets for realtime file sharing",
 			github: "https://github.com/peteradeojo/filesheer"
 		},
 		{
-			id: 4,
+			id: 400,
 			title: "Maternal-Child Specialists' Clinics",
 			url: "https://maternalchildhosp.net",
 			description:

@@ -5,14 +5,14 @@ const Works = ({ works }) => {
 		<div className='py-[50px]'>
 			<h1 className='text-center text-3xl'>Projects</h1>
 			<div className='py-4'></div>
-			<div className={"md:flex flex-wrap justify-between gap-y-8"}>
+			<div className={"md:grid grid-cols-3 gap-y-8"}>
 				{works
 					.sort((a, b) => a.id - b.id)
 					.map((work) => (
 						<a
 							key={work.id}
 							className={
-								"transition duration-200 hover:glass p-2 rounded w-[30%] block"
+								"transition duration-200 hover:glass p-2 rounded block"
 							}
 							href={work.url || "#"}
 							target='_blank'
@@ -22,7 +22,7 @@ const Works = ({ works }) => {
 									{work.thumbnail ? (
 										<img src={work.thumbnail} alt='' className='w-full' />
 									) : (
-										<div className='h-[220px] glass'></div>
+										<div className='h-[220px] glass w-full'></div>
 									)}
 								</div>
 							</div>
